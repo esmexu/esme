@@ -1,0 +1,18 @@
+img {
+    width: 250px;
+}
+
+nav{
+    padding: 8px;
+    background-color:aquamarine
+
+}
+nav a {
+    display: block;
+    display: inline;
+    color:black;
+    text-align: centert;   
+    text-decoration: none;
+    padding: 14px 16px;
+
+}

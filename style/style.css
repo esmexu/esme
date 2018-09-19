@@ -1,3 +1,6 @@
+body{
+    margin:0;
+}
 img {
     width: 250px;
 }
@@ -26,4 +29,10 @@ nav a.current{
 
 body {
     background-color: lightskyblue;
+}
+iframe{
+    width: 95%;
+    height: 95vh;
+    margin:0 auto;
+    margin-top: 20px;
 }

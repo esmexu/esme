@@ -1,8 +1,8 @@
 body{
-    margin:0;
+    margin:10px;
 }
 img {
-    width: 250px;
+    height:50vh;
 }
 
 nav{
@@ -31,8 +31,8 @@ body {
     background-color: lightskyblue;
 }
 iframe{
-    width: 95%;
+    width: 70%;
     height: 95vh;
-    margin:0 auto;
+    margin-left:15%;
     margin-top: 20px;
 }

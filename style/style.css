@@ -3,16 +3,27 @@ img {
 }
 
 nav{
-    padding: 8px;
-    background-color:aquamarine
-
+    text-align: right;
+    background-color: aquamarine;
 }
-nav a {
-    display: block;
-    display: inline;
-    color:black;
-    text-align: centert;   
+nav a{
+    display: inline-block;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 14px 12px;
+    background-color: pink;
+}
+nav i{
+    align-content: left;
+}
+nav a:hover{
+    background-color: brown;
+}
 
+nav a.current{
+    background-color: black;
+    color:white;
+}
+
+body {
+    background-color: lightskyblue;
 }

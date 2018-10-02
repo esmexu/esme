@@ -17,12 +17,12 @@ iframe{
 
 */
 
-* body{
+body{
     margin:0px;
     font-family: 'Lato', sans-serif;
 }
 img {
-    height: 50vh;
+    height:50vh;
 }
 
 nav{
@@ -93,6 +93,8 @@ header {
     justify-self: center;
     align-self: center;
     margin: 0 70px 0;
+    background-image: url("../images/psycholinguistics.jpg");
+    color: white;
 }
 
 .fa-facebook, .fa-instagram, .fa-linkedin{

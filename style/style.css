@@ -21,8 +21,12 @@ body{
     margin:0px;
     font-family: 'Lato', sans-serif;
 }
+
+* {
+    box-sizing: border-box;
+}
 img {
-    height:50vh;
+    height:40vh;
 }
 
 nav{
@@ -53,16 +57,75 @@ nav a.current{
 *{
     box-sizing: border-box;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 75px 1fr 1fr 1fr 1fr 75px;
-    background-color: lightcyan;
-    padding: 10px;
+[class*="col-"] {
+    float: left;;
+    padding: 15px;
+    border: 1px solid red;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* For mobile phones: */
+div {background-color: yellow;}
+[class*="col-"] {
+    width: 100%;;
 }
 
-/* index page */
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    div {background-color: aquamarine;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    div {background-color: beige;
+        font-size: 80%;
+    }
+    
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+
+.profile {
+    justify-self: center;
+    align-self: center;
+}
+
+/* index page 
 header {
     grid-column: 1/7;
 }
@@ -72,7 +135,6 @@ header {
     grid-row: 2/4;
     justify-self: center;
     align-self: center;
-    height:60vh;
 }
 
 .item1 {
@@ -93,9 +155,9 @@ header {
     justify-self: center;
     align-self: center;
     margin: 0 70px 0;
-    background-image: url("../images/psycholinguistics.jpg");
-    color: white;
+    color:black;
 }
+*/
 
 .fa-facebook, .fa-instagram, .fa-linkedin{
     font-size: 1.5em;
@@ -103,12 +165,9 @@ header {
 }
 .icons{
     justify-self: center;
-    grid-column: 1/7;
-    grid-row: 6/7;
+    align-self: center;
 }
 .footer{
-    grid-column: 1/7;
-    grid-row: 6/7;
     align-self: end;
     justify-self: center;
 
